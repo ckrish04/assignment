@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organify - Fresh & Organic</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature-cards.css">
+</head>
+<body>
+
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+                
+                <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+                    <img src="org.png" alt="Organify Logo" class="me-2" style="height: 40px; width: auto;"> 
+                    <div class="d-flex flex-column lh-1">
+                        <span class="fs-4 fw-bold text-success">ORGANIFY</span>
+                        <span class="small text-muted" style="margin-top: -3px;">Organic Food Store</span>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        
+                        <li class="nav-item dropdown css-hover-dropdown mega-menu-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu shadow-lg mega-menu-content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="text-uppercase fw-bold text-dark mb-2">PRODUCT LAYOUT</h6>
+                                            <ul class="list-unstyled mega-menu-list">
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid 2 Columns</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid 3 Columns</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid 4 Columns</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid 4 Columns Full Width</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="text-uppercase fw-bold text-dark mb-2">PRODUCT LAYOUT</h6>
+                                            <ul class="list-unstyled mega-menu-list">
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid Left Sidebar</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid Without Sidebar</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Grid Right Sidebar</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="text-uppercase fw-bold text-dark mb-2">PRODUCT TYPE</h6>
+                                            <ul class="list-unstyled mega-menu-list">
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Simple</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Variable</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6">
+                                            <h6 class="text-uppercase fw-bold text-dark mb-2">SHOP PAGE</h6>
+                                            <ul class="list-unstyled mega-menu-list">
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Cart</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">My Account</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Wishlist</a></li>
+                                                <li><a class="dropdown-item mega-menu-item" href="#">Checkout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown css-hover-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu shadow-lg">
+                                <li><a class="dropdown-item mega-menu-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Landing Page</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Page 404</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown css-hover-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu shadow-lg">
+                                
+                                <li class="dropdown-item dropdown css-hover-dropdown dropend">
+                                    <a class="mega-menu-item dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                        Blog Standard
+                                    </a>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item mega-menu-item" href="#">Full Width</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">Left Sidebar</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">Right Sidebar</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown-item dropdown css-hover-dropdown dropend">
+                                    <a class="mega-menu-item dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                        Blog Grid
+                                    </a>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item mega-menu-item" href="#">2 Columns</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">3 Columns</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">4 Columns</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-item dropdown css-hover-dropdown dropend">
+                                    <a class="mega-menu-item dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                        Blog Details
+                                    </a>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item mega-menu-item" href="#">With Gallery</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">With Video</a></li>
+                                        <li><a class="dropdown-item mega-menu-item" href="#">With Audio</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown css-hover-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu shadow-lg">
+                                <li><a class="dropdown-item mega-menu-item" href="#">Crackers</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Fresh Fruits</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Glutenfree</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Organic</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Vegan</a></li>
+                                <li><a class="dropdown-item mega-menu-item" href="#">Vegetarian</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center ms-auto"> 
+                        
+                        <a class="nav-link d-none d-lg-block text-dark" href="#" data-bs-toggle="modal" data-bs-target="#loginSignupModal" style="padding-right: 0.5rem!important;">
+                            <i class="fas fa-user me-1"></i> My Account
+                        </a>
+                        
+                        <a class="nav-link d-none d-lg-block text-dark" href="#" style="padding-right: 0.5rem!important;">
+                            <i class="fas fa-heart me-1"></i> Wishlist
+                        </a>
+                        
+                        <div class="input-group search-bar me-3">
+                            <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        
+                        <a href="#cartOffcanvas" class="btn btn-success cart-button" 
+                           data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                            <i class="fas fa-shopping-cart me-1"></i> $0.00
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-carousel" class="position-relative">
+            <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active" style="min-height: 600px;">
+                        <div class="hero-slide-content">
+                            <div class="container py-5">
+                                <div class="row align-items-center position-relative">
+                                    <div class="col-lg-6 z-1">
+                                        <h1 class="display-4 fw-bolder mb-3 text-dark">Naturally Rich & Energy-Packed Kharak!</h1>
+                                        <p class="fs-5 mb-4 text-muted" style="max-width: 500px;">Sun-dried and loaded with natural sugars and essential minerals, the perfect healthy snack.</p>
+                                        <a href="#products" class="btn btn-success btn-lg fw-bold shadow-lg text-uppercase py-3 px-5">Purchase Now</a>
+                                    </div>
+                                    
+                                    <div class="product-image-layer">
+                                        <img src="/kharak.avif" alt="Organic Kharak" class="img-fluid">
+                                    </div>
+                                    
+                                    <div class="price-tag price-tag-right price-tag-brown">
+                                        <span class="fw-bold fs-3">$8.49</span>
+                                        <span class="per-unit">PER KG</span>
+                                        <span class="product-type">PREMIUM DRY FRUITS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-background" style="--bg-start: #fdfbe8; --bg-end: #fcd889;"></div>
+                    </div>
+
+                    <div class="carousel-item" style="min-height: 600px;">
+                        <div class="hero-slide-content">
+                            <div class="container py-5">
+                                <div class="row align-items-center position-relative">
+                                    <div class="col-lg-6 z-1">
+                                        <h1 class="display-4 fw-bolder mb-3 text-dark">Fresh Dates, Wholesome & Delicious!</h1>
+                                        <p class="fs-5 mb-4 text-muted" style="max-width: 500px;">Sustainably sourced, soft, chewy, and packed with fiber and energy for a guilt-free treat.</p>
+                                        <a href="#products" class="btn btn-success btn-lg fw-bold shadow-lg text-uppercase py-3 px-5">Purchase Now</a>
+                                    </div>
+                                    <div class="product-image-layer">
+                                        <img src="/dates.jpg" alt="Organic Dates" class="img-fluid">
+                                    </div>
+                                    <div class="price-tag price-tag-right price-tag-green">
+                                        <span class="fw-bold fs-3">$9.99</span>
+                                        <span class="per-unit">PER KG</span>
+                                        <span class="product-type">FRESH ORGANIC FRUITS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-background" style="--bg-start: #fdfbe8; --bg-end: #d8edd2;"></div>
+                    </div>
+                    
+                    <div class="carousel-item" style="min-height: 600px;">
+                        <div class="hero-slide-content">
+                            <div class="container py-5">
+                                <div class="row align-items-center position-relative">
+                                    <div class="col-lg-6 z-1">
+                                        <h1 class="display-4 fw-bolder mb-3 text-dark">The Best Almonds for Health!</h1>
+                                        <p class="fs-5 mb-4 text-muted" style="max-width: 500px;">Sustainably grown, crunchy, and packed with healthy fats and vitamins for your daily boost.</p>
+                                        <a href="#products" class="btn btn-success btn-lg fw-bold shadow-lg text-uppercase py-3 px-5">Purchase Now</a>
+                                    </div>
+                                    <div class="product-image-layer">
+                                        <img src="/almonds.jpg" alt="Organic Almonds" class="img-fluid">
+                                    </div>
+                                    <div class="price-tag price-tag-right price-tag-light-green">
+                                        <span class="fw-bold fs-3">$12.99</span>
+                                        <span class="per-unit">PER KG</span>
+                                        <span class="product-type">ORGANIC NUTS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-background" style="--bg-start: #e0f0da; --bg-end: #d8edd2;"></div>
+                    </div>
+                    
+                    <div class="carousel-item" style="min-height: 600px;">
+                        <div class="hero-slide-content">
+                            <div class="container py-5">
+                                <div class="row align-items-center position-relative">
+                                    <div class="col-lg-6 z-1">
+                                        <h1 class="display-4 fw-bolder mb-3 text-dark">Vitamin C Powerhouse: Fresh Oranges!</h1>
+                                        <p class="fs-5 mb-4 text-muted" style="max-width: 500px;">Juicy, seedless, and certified organic—the perfect winter immunity booster, delivered fresh.</p>
+                                        <a href="#products" class="btn btn-success btn-lg fw-bold shadow-lg text-uppercase py-3 px-5">Purchase Now</a>
+                                    </div>
+                                    <div class="product-image-layer">
+                                        <img src="/oranges.jpg" alt="Organic Oranges" class="img-fluid">
+                                    </div>
+                                    <div class="price-tag price-tag-right price-tag-orange">
+                                        <span class="fw-bold fs-3">$5.50</span>
+                                        <span class="per-unit">PER KG</span>
+                                        <span class="product-type">FRESH ORGANIC FRUITS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-background" style="--bg-start: #f8f6e0; --bg-end: #ffeb99;"></div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="features" class="section-padding py-5">
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+                    
+                    <div class="col">
+                        <div class="feature-card card h-100 shadow-sm p-4 border-0">
+                            <img src="/100percent.png" class="feature-icon" alt="Organic Icon">
+                            <h5 class="fw-bold">100% Organic Product</h5>
+                            <p class="text-muted">Certified organic by top international standards for purity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="feature-card card h-100 shadow-sm p-4 border-0">
+                            <img src="/workinghours.png" class="feature-icon" alt="Shipping Icon">
+                            <h5 class="fw-bold">Fast & Free Shipping</h5>
+                            <p class="text-muted">Enjoy free shipping on all orders over $50, delivered fresh.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="feature-card card h-100 shadow-sm p-4 border-0">
+                            <img src="/24hourssupport.png" class="feature-icon" alt="Support Icon">
+                            <h5 class="fw-bold">24/7 Dedicated Support</h5>
+                            <p class="text-muted">Need help? Our customer service team is here around the clock.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="feature-card card h-100 shadow-sm p-4 border-0">
+                            <img src="/delivery.png" class="feature-icon" alt="Deal Icon">
+                            <h5 class="fw-bold">Amazing Daily Deal</h5>
+                            <p class="text-muted">Unlock exclusive discounts and limited-time special offers.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="almond-benefits" class="section-padding bg-light position-relative overflow-hidden">
+            <div id="almond-rain-container"></div>
+
+            <div class="container py-5 position-relative z-1">
+                <div class="row justify-content-center align-items-center">
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <div class="d-flex align-items-start benefit-card mb-5">
+                            <i class="fas fa-hand-holding-water fa-3x text-success me-3"></i>
+                            <div>
+                                <h4 class="fw-bold mb-1 text-dark">Unlock Nutrients by Soaking</h4>
+                                <p class="text-muted mb-0 small">The process of soaking almonds neutralizes their "self-defense mechanism," making them easier to digest and allowing your body to absorb more essential vitamins and minerals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start benefit-card">
+                            <i class="fas fa-heart fa-3x text-success me-3"></i>
+                            <div>
+                                <h4 class="fw-bold mb-1 text-dark">Healthy Fats for Heart Health</h4>
+                                <p class="text-muted mb-0 small">Almonds are rich in monounsaturated fats, which are known to help lower bad cholesterol (LDL) levels, supporting overall cardiovascular wellness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                        <div class="d-flex align-items-start benefit-card mb-5">
+                            <i class="fas fa-brain fa-3x text-success me-3"></i>
+                            <div>
+                                <h4 class="fw-bold mb-1 text-dark">Vitamin E for Cognitive Boost</h4>
+                                <p class="text-muted mb-0 small">Packed with Vitamin E, almonds protect your cells from oxidative damage, contributing to improved brain function and sharp memory.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start benefit-card">
+                            <i class="fas fa-apple-alt fa-3x text-success me-3"></i>
+                            <div>
+                                <h4 class="fw-bold mb-1 text-dark">High Fiber and Protein</h4>
+                                <p class="text-muted mb-0 small">A powerful combination of fiber and protein makes almonds a perfect snack for sustained energy, blood sugar control, and feeling full longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container-fluid text-center py-5">
+            <h3 class="fw-bolder" style="font-size: 2.2rem; color: var(--text-dark);">Customer Praise for Our <br><span class="text-success">Organic Online Store</span></h3>
+        </div>
+        
+        <section id="product-tabs" class="section-padding pt-5 pb-3">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Quality Products</h2>
+                <div class="d-flex justify-content-center mb-5">
+                    <ul class="nav nav-pills product-nav-pills" id="productTab" role="tablist">
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="btn btn-success rounded-3 me-2 active" data-bs-toggle="pill" data-bs-target="#tab-all" type="button">All Products</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="btn btn-outline-secondary rounded-3 me-2" data-bs-toggle="pill" data-bs-target="#tab-fruits" type="button">Fruits</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="btn btn-outline-secondary rounded-3 me-2" data-bs-toggle="pill" data-bs-target="#tab-dry-fruits" type="button">Dry Fruits</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="btn btn-outline-secondary rounded-3" data-bs-toggle="pill" data-bs-target="#tab-nuts" type="button">Nuts</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-grid" class="pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card card shadow-sm h-100 border-0 p-3">
+                            <div class="product-image-container mb-3 position-relative">
+                                <img src="/oranges.jpg" class="card-img-top img-fluid rounded-3" alt="Organic Orange Fruit Spread">
+                                
+                                <div class="product-hover-icons">
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="far fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm"><i class="far fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 text-center">
+                                <span class="product-category small text-success fw-bold">Fruits</span>
+                                <h5 class="card-title fw-bold mt-1 mb-2">Crofters Peach Organic Premium Spread, 16.5 Oz</h5>
+                                <p class="product-price fs-5 fw-bold text-dark mb-3">$12.00 – $30.00</p>
+                                <a href="#" class="btn btn-success w-100 fw-bold py-2 text-uppercase">Select options</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card card shadow-sm h-100 border-0 p-3">
+                            <div class="product-image-container mb-3 position-relative">
+                                <img src="/kharak.avif" class="card-img-top img-fluid rounded-3" alt="Premium Kharak Dry Fruit Bag">
+                                
+                                <div class="product-hover-icons">
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="far fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm"><i class="far fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 text-center">
+                                <span class="product-category small text-success fw-bold">Dry Fruits</span>
+                                <h5 class="card-title fw-bold mt-1 mb-2">Naturally Rich Sun-Dried Kharak, 1 KG</h5>
+                                <p class="product-price fs-5 fw-bold text-dark mb-3">$8.49</p>
+                                <a href="#" class="btn btn-success w-100 fw-bold py-2 text-uppercase">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card card shadow-sm h-100 border-0 p-3">
+                            <div class="product-image-container mb-3 position-relative">
+                                <img src="/almonds.jpg" class="card-img-top img-fluid rounded-3" alt="Organic Almonds Bag">
+                                
+                                <div class="product-hover-icons">
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="far fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm"><i class="far fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 text-center">
+                                <span class="product-category small text-success fw-bold">Nuts</span>
+                                <h5 class="card-title fw-bold mt-1 mb-2">Premium Organic California Almonds, 1 KG</h5>
+                                <p class="product-price fs-5 fw-bold text-dark mb-3">$12.99</p>
+                                <a href="#" class="btn btn-success w-100 fw-bold py-2 text-uppercase">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card card shadow-sm h-100 border-0 p-3">
+                            <div class="product-image-container mb-3 position-relative">
+                                <img src="/dates.jpg" class="card-img-top img-fluid rounded-3" alt="Fresh Organic Dates Box">
+                                
+                                <div class="product-hover-icons">
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm me-1"><i class="far fa-heart"></i></button>
+                                    <button class="btn btn-light rounded-circle btn-sm"><i class="far fa-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 text-center">
+                                <span class="product-category small text-success fw-bold">Fruits</span>
+                                <h5 class="card-title fw-bold mt-1 mb-2">Wholesome & Delicious Fresh Organic Dates, 1 KG</h5>
+                                <p class="product-price fs-5 fw-bold text-dark mb-3">$9.99</p>
+                                <a href="#" class="btn btn-success w-100 fw-bold py-2 text-uppercase">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <div class="modal fade" id="loginSignupModal" tabindex="-1" aria-labelledby="loginSignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 550px;">
+            <div class="modal-content">
+                <div class="modal-header p-0 border-0">
+                    <ul class="nav nav-pills w-100" id="pills-tab" role="tablist">
+                        <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link active w-100 rounded-0 login-tab-button" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link w-100 rounded-0 signup-tab-button" id="pills-signup-tab" data-bs-toggle="pill" data-bs-target="#pills-signup" type="button" role="tab" aria-controls="pills-signup" aria-selected="false">Sign Up</button>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close me-2 mt-2 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body p-4">
+                    <div class="tab-content" id="pills-tabContent">
+                        
+                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label visually-hidden">Email address</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="loginEmail" placeholder="Email address" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label visually-hidden">Password</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label small text-muted" for="rememberMe">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                    <a href="#" class="text-success small fw-bold text-decoration-none">Forgot Password?</a>
+                                </div>
+                                
+                                <div class="d-grid mb-4">
+                                    <button type="submit" class="btn btn-success btn-lg fw-bold text-uppercase py-3">Login</button>
+                                </div>
+                                
+                                <div class="text-center text-muted small">
+                                    <p class="mb-3">— Or Login With —</p>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-outline-secondary me-2 rounded-circle" style="width: 50px; height: 50px;"><i class="fab fa-google fa-lg"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary me-2 rounded-circle" style="width: 50px; height: 50px;"><i class="fab fa-facebook-f fa-lg"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary rounded-circle" style="width: 50px; height: 50px;"><i class="fab fa-twitter fa-lg"></i></button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label visually-hidden">Full Name</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        <input type="text" class="form-control" id="signupName" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label visually-hidden">Email address</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="signupEmail" placeholder="Email address" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupPassword" class="form-label visually-hidden">Password</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="signupConfirmPassword" class="form-label visually-hidden">Confirm Password</label>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid mb-4">
+                                    <button type="submit" class="btn btn-success btn-lg fw-bold text-uppercase py-3">Sign Up</button>
+                                </div>
+                                
+                                <div class="text-center small text-muted">
+                                    By clicking Sign Up, you agree to our <a href="#" class="text-success fw-bold text-decoration-none">Terms of Service</a>.
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" style="width: 380px;">
+    </div>
+    
+    <footer id="contact" class="footer-section">
+        
+        <div class="footer-newsletter">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-5 fw-bolder mb-3 footer-heading">Stay Updated: Subscribe for Organic Food <br>News and Exclusive Offers</h2>
+                        <div class="input-group w-75 mx-auto mt-4">
+                            <input type="email" class="form-control form-control-lg footer-input" placeholder="Enter your mail here..." aria-label="Enter your mail here...">
+                            <button class="btn btn-success btn-lg fw-bold px-4" type="button">Get Subscribed! <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-links-area py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    
+                    <div class="col-lg-4 col-md-6 footer-col-logo">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="org.png" alt="Organify Logo" class="me-2" style="height: 40px; width: auto;"> 
+                            <div class="d-flex flex-column lh-1">
+                                <span class="fs-4 fw-bold footer-brand-text">Organify</span>
+                                <span class="small footer-store-text">Organic Food Store</span>
+                            </div>
+                        </div>
+                        <p class="small text-white-50">Sustainably sourced, fresh, and organic products delivered to your door.</p>
+                        
+                        <div class="d-flex align-items-center mt-3 buy-envato">
+                            <a href="https://themeforest.net/" class="btn btn-dark btn-sm fw-bold" target="_blank">
+                                <i class="fas fa-shopping-bag me-1"></i> Buy on **envato**
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <h6 class="fw-bold footer-list-title">Contact Us</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Our Stories</a></li>
+                            <li><a href="#">News & Blogs</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <h6 class="fw-bold footer-list-title">Payments</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Cancellation & Returns</a></li>
+                            <li><a href="#">Report Infringement</a></li>
+                        </ul>
+                        <h6 class="fw-bold footer-list-title mt-4">Terms of Use</h6>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">GDPR Compliance</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-contact-info">
+                        <h6 class="fw-bold footer-list-title">Address</h6>
+                        <p class="small mb-2">327 Park Ave S, New York, NY 10010 United States</p>
+                        
+                        <h6 class="fw-bold footer-list-title">Hours</h6>
+                        <p class="small mb-2">Mon-Fri: 9 AM to 5 PM</p>
+
+                        <h6 class="fw-bold footer-list-title">Phone</h6>
+                        <p class="small mb-3">+1 877 217 8371</p>
+                        
+                        <div class="footer-social-icons">
+                            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="ms-3"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const rainContainer = document.getElementById('almond-rain-container');
+            const targetSection = document.getElementById('almond-benefits');
+            let isRaining = false;
+            let intervalId = null;
+            
+            const almondImageSrc = '/special.jpg'; 
+
+            function createAlmond() {
+                const almond = document.createElement('img');
+                almond.src = almondImageSrc;
+                almond.classList.add('falling-almond');
+                
+                const size = Math.random() * 30 + 30;
+                almond.style.width = size + 'px';
+                almond.style.height = 'auto';
+
+                almond.style.left = Math.random() * 100 + '%';
+                
+                const duration = Math.random() * 5 + 5;
+                almond.style.animationDuration = duration + 's';
+
+                almond.style.animationDelay = Math.random() * 2 + 's'; 
+                
+                rainContainer.appendChild(almond);
+
+                almond.addEventListener('animationend', () => {
+                    almond.remove();
+                });
+            }
+
+            function startRain() {
+                if (isRaining) return;
+                isRaining = true;
+                intervalId = setInterval(createAlmond, 200);
+            }
+
+            function stopRain() {
+                if (!isRaining) return;
+                isRaining = false;
+                clearInterval(intervalId);
+                intervalId = null;
+                
+                document.querySelectorAll('.falling-almond').forEach(almond => {
+                    almond.style.opacity = 0;
+                    almond.style.transition = 'opacity 2s ease-out';
+                    setTimeout(() => almond.remove(), 2000); 
+                });
+            }
+
+            function checkScroll() {
+                const rect = targetSection.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                const shouldStart = rect.top < windowHeight * 0.75 && rect.bottom > 0;
+                
+                if (shouldStart) {
+                    startRain();
+                } else {
+                    stopRain();
+                }
+            }
+
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Run once on load to initialize
+        });
+    </script>
+</body>
+</html>

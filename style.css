@@ -1,0 +1,416 @@
+/* GLOBAL STYLES & ACCESSIBILITY */
+:root {
+    --primary-color: #198754; /* Bootstrap Success Green */
+    --secondary-color: #ffc107; /* Bootstrap Warning Yellow for CTAs */
+    --text-dark: #333;
+    --text-muted: #6c757d;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7; 
+    color: var(--text-dark); 
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* NAVBAR & NAVIGATION */
+.navbar-brand .fs-4 { letter-spacing: 0.5px; }
+.navbar-brand .small { font-size: 0.75rem; font-weight: 500; text-transform: capitalize; color: #6c757d !important; }
+
+/* Applies Calligraphy Font to ALL Nav Links (Main Nav, My Account, Wishlist) */
+.nav-link {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.25rem;
+    font-weight: 800 !important; 
+    text-transform: none !important;
+    white-space: nowrap; 
+    
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 0.5rem 0.6rem !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* CSS HOVER DROPDOWN LOGIC (No JS) */
+.css-hover-dropdown .dropdown-menu { display: none; margin-top: 0; border-top: none; }
+@media (min-width: 992px) {
+    .css-hover-dropdown:hover > .dropdown-menu { display: block; opacity: 1; visibility: visible; transition: opacity 0.2s ease-in-out; }
+    .css-hover-dropdown .dropend:hover > .dropdown-menu { display: block; top: 0; left: 100%; margin-left: .1rem; }
+}
+
+/* DROPDOWN & MEGA MENU STYLING */
+.dropdown-menu { padding: 0.5rem 0; border-radius: 5px; border-top: 3px solid var(--primary-color); }
+.mega-menu-dropdown .dropdown-menu { width: 1000px; max-width: 100vw; left: 0; transform: none; border: none; border-top: 3px solid var(--primary-color); margin-top: 0; }
+.mega-menu-content { padding: 1.5rem 2rem !important; }
+.mega-menu-item { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 400; color: var(--text-dark) !important; padding: 0.3rem 0.75rem; transition: background-color 0.2s ease, color 0.2s ease; border-radius: 5px; display: block; width: 100%; clear: both; text-align: inherit; white-space: nowrap; }
+.mega-menu-item:hover { background-color: rgba(var(--bs-success-rgb), 0.1); color: var(--primary-color) !important; }
+.mega-menu-dropdown h6 { color: var(--text-dark) !important; font-family: 'Inter', sans-serif; font-weight: 700 !important; font-size: 0.9rem; letter-spacing: 0.5px; margin-bottom: 0.5rem !important; }
+
+/* -------------------------------------- */
+/* HERO CAROUSEL STYLING */
+/* -------------------------------------- */
+
+#hero-carousel { overflow: hidden; }
+.carousel-item { position: relative; padding-top: 50px; padding-bottom: 50px; }
+
+/* The actual background element using CSS gradient */
+.slide-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+    /* Dynamic Gradient based on CSS variables set in HTML */
+    background: linear-gradient(to right, 
+        var(--bg-start) 0%,
+        var(--bg-start) 30%, 
+        var(--bg-end) 50%,
+        var(--bg-end) 100%
+    );
+    
+    /* Image-like edge cut */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-slide-content { position: relative; z-index: 10; }
+
+/* Product Image Layer Styling */
+.product-image-layer {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 500px;
+    max-width: 50%;
+    z-index: 5;
+}
+.product-image-layer img { width: 100%; height: auto; transform: rotate(2deg); }
+
+/* Price Tag Styling (Fixed position on right) */
+.price-tag {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Position the price tag relative to the image on the right side */
+.price-tag-right {
+    top: 35%; /* Vertical position adjusted to top center */
+    right: 5%; /* Aligned with the image layer */
+    transform: translateY(0);
+    width: 150px; /* Consistent width for clean layout */
+    
+    /* Image-like edge cut for the price tag itself */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    background-color: var(--bg-end); /* Price tag background matching slide end color */
+}
+
+.price-tag .per-unit { font-size: 0.9rem; font-weight: 500; }
+.price-tag .product-type { font-size: 0.75rem; color: var(--text-muted); }
+
+
+/* RIGHT-SIDE UTILITY LINKS & SEARCH BAR */
+.cart-button { min-width: 90px; font-weight: 700; }
+.search-bar .form-control { border-right: none; border-radius: 5px 0 0 5px; }
+.search-bar .input-group-text { background-color: white; border-left: none; color: #6c757d; border-radius: 0 5px 5px 0; }
+
+/* LOGIN/SIGNUP MODAL STYLING */
+.modal-content { border-radius: 10px; overflow: hidden; }
+.modal-header .nav-link { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-dark); text-transform: uppercase; border: none; padding: 1rem; background-color: #f0f0f0; transition: all 0.2s ease; }
+.login-tab-button.nav-link.active { background-color: #f0f0f0; color: var(--text-dark); }
+.signup-tab-button.nav-link.active { background-color: var(--primary-color); color: white; }
+.modal-body .input-group-text { background-color: white; color: var(--text-muted); }
+.input-group-lg > .form-control, .input-group-lg > .input-group-text { padding: 1rem 0.75rem; height: auto; border-radius: 5px !important; }
+
+/* Media Query for Mobile Adjustments */
+@media (max-width: 992px) {
+    .carousel-item { min-height: 450px; }
+    .product-image-layer, .price-tag { display: none; }
+    .slide-background { background: var(--bg-end) !important; }
+    .display-4 { font-size: 2.5rem; }
+}
+
+/* -------------------------------------- */
+/* ALMOND HEALTH BENEFITS STYLING */
+/* -------------------------------------- */
+#almond-benefits {
+    background-color: #fdfae8 !important; /* Light creamy background color */
+}
+
+/* Almond Rain Container Styles */
+#almond-rain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicks to pass through */
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Style for the falling almond images */
+.falling-almond {
+    position: absolute;
+    top: -10%; /* Start slightly above the top of the container */
+    opacity: 0.6; /* Slight transparency */
+    transform: rotate(calc(var(--rotation) * 1deg)); /* Apply rotation via JS/CSS var */
+    animation-name: fall-and-fade;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+/* Keyframes for the falling animation */
+@keyframes fall-and-fade {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg); /* Fall beyond the viewport, add rotation */
+        opacity: 0;
+    }
+}
+
+
+/* Styling for the icon and text alignment */
+.benefit-card .fa-3x {
+    min-width: 60px; /* Ensures icons have space and align correctly */
+    text-align: center;
+    padding-top: 5px;
+}
+
+.benefit-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+
+/* -------------------------------------- */
+/* PRODUCT GRID STYLING */
+/* -------------------------------------- */
+
+#product-tabs h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+}
+
+.product-nav-pills .btn {
+    border: 1px solid #ced4da;
+    color: var(--text-dark);
+}
+
+.product-nav-pills .btn-success.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Product Card Specific Styles */
+.product-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image-container {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.product-image-container img {
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image-container img {
+    transform: scale(1.05);
+}
+
+/* Hover Icons (Quick View, Wishlist, Compare) */
+.product-hover-icons {
+    position: absolute;
+    bottom: 85px; /* Adjust based on card-body height */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.25rem;
+}
+
+.product-card:hover .product-hover-icons {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-hover-icons .btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Product Details */
+.product-category {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.card-title {
+    font-size: 1.1rem;
+    min-height: 48px; 
+}
+
+.product-price {
+    color: var(--text-dark);
+}
+
+/* -------------------------------------- */
+/* FOOTER STYLING */
+/* -------------------------------------- */
+
+.footer-section {
+    background-color: var(--text-dark); /* Dark background for footer */
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.footer-newsletter {
+    background-color: #f8f8f8;
+    color: var(--text-dark);
+    padding: 60px 0;
+}
+
+.footer-heading {
+    color: var(--text-dark);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 2.2rem;
+    }
+    .footer-input {
+        width: 100% !important;
+    }
+}
+
+.footer-input {
+    border-radius: 5px 0 0 5px !important;
+    border: 1px solid #ced4da;
+    padding: 0.8rem 1.25rem;
+}
+
+.footer-newsletter .btn-success {
+    border-radius: 0 5px 5px 0 !important;
+    white-space: nowrap;
+}
+
+/* Footer Links Area */
+.footer-links-area {
+    background-color: var(--text-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-brand-text {
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+.footer-store-text {
+    color: #999;
+}
+
+.footer-col-logo .buy-envato {
+    margin-top: 1rem !important;
+    display: inline-block;
+}
+
+.footer-list-title {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.footer-list a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 2.1;
+    transition: color 0.2s ease;
+    display: block;
+}
+
+.footer-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-contact-info p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Footer Social Icons */
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.footer-social-icons a {
+    color: #ccc;
+    font-size: 1.25rem;
+    transition: color 0.2s ease;
+}
+.footer-social-icons a:hover {
+    color: var(--primary-color);
+}

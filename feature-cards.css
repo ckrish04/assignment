@@ -1,0 +1,78 @@
+/* -------------------------------------- */
+/* SECTION 2: FEATURE HIGHLIGHTS (Separated file) */
+/* -------------------------------------- */
+
+.feature-card { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #ffffff; 
+    /* Fix: Use flexbox for perfect vertical and horizontal centering */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.feature-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; 
+}
+
+.feature-icon { 
+    /* Fix: Set fixed dimensions and ensure aspect ratio is maintained */
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.feature-card h5 { 
+    font-size: 1.1rem; 
+    color: var(--text-dark); 
+    line-height: 1.3; 
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p { 
+    font-size: 0.9rem; 
+    margin-bottom: 0; 
+}
+/* -------------------------------------- */
+/* SECTION 2: FEATURE HIGHLIGHTS (Original structure) */
+/* -------------------------------------- */
+
+.feature-card { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #ffffff; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.feature-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important; 
+}
+
+.feature-icon { 
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.feature-card h5 { 
+    font-size: 1.1rem; 
+    color: var(--text-dark); 
+    line-height: 1.3; 
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p { 
+    font-size: 0.9rem; 
+    margin-bottom: 0; 
+}
